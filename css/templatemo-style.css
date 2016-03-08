@@ -53,7 +53,7 @@ p:last-child { margin-bottom: 0; }
 .page-bg-imgs-list { display: none; }
 
 .header {
-	max-width: 420px;
+	max-width: 500px;
 	overflow: auto;
 }
 
@@ -305,7 +305,7 @@ p:last-child { margin-bottom: 0; }
 
 @media screen and (max-width: 767px) {
 	.content-wrapper { position: static; }
-  .content { max-width: 420px;}
+  .content { max-width: 500px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
