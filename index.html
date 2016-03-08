@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -110,20 +111,26 @@
               </header>
 
               <div class="content-text content-text-gallery">
-
                 <div class="flexslider-wrapper">
-                  <div id="slider" class="flexslider">
-                    <div class="slider-link">
-                      <p>Visit Site</p>
-                    </div>
+                  <div id="slider" class="flexslider slider-overlay">
                     <ul class="slides">
                       <li>
-                        <a target="_blank" href="http://locallivemusic.herokuapp.com"><img src="img/slider/LocalLiveMusic-full.png" alt="Slide 1" /></a>
+                        <a target="_blank" href="http://locallivemusic.herokuapp.com">
+                          <div class="overlay-text">
+                            <p>Visit Site</p>
+                          </div>
+                        </a>
+                        <img src="img/slider/LocalLiveMusic-full.png" alt="Slide 1" />
                         <p class="project-desc">Find tonight's nearby local music venues in San Francisco, CA!</p>
                         <p class="project-desc">- Dev Bootcamp Jan 2016 Hackathon</p>
                       </li>
                       <li>
-                        <a target="_blank" href="http://thermo-aggregation-project.herokuapp.com"><img src="img/slider/TAP-full.png" alt="Slide 2" /></a>
+                        <a target="_blank" href="http://thermo-aggregation-project.herokuapp.com">
+                          <div class="overlay-text slide-two">
+                            <p>Visit Site</p>
+                          </div>
+                        </a>
+                        <img src="img/slider/TAP-full.png" alt="Slide 2" /></a>
                         <p class="project-desc">Monitor human temperature readings in communities throughout the nation for early signs of potential public health concerns</p>
                       </li>
                       <li>
@@ -194,6 +201,7 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/templatemo-script.js"></script>
+    <script src="js/projects.js"></script>
 
   </body>
 </html>
