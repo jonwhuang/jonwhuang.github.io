@@ -126,6 +126,10 @@ p:last-child { margin-bottom: 0; }
   padding-left: 40px;
 }
 
+.project-desc {
+  text-align: center;
+}
+
 /*.box-nav-item:hover, .box-nav-item:focus, .box-nav-item.active {
 	background-color: #f6f6f6;
 }*/
@@ -313,10 +317,6 @@ p:last-child { margin-bottom: 0; }
 	}
 
 	.footer { position: static;	}
-
-  #carousel ul.slides li {
-    width: 200px!important;
-  }
 }
 
 @media screen and (max-width: 767px) {
