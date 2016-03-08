@@ -128,6 +128,7 @@ p:last-child { margin-bottom: 0; }
 
 .project-desc {
   text-align: center;
+  font-weight: bold;
 }
 
 /*.box-nav-item:hover, .box-nav-item:focus, .box-nav-item.active {
@@ -245,6 +246,22 @@ p:last-child { margin-bottom: 0; }
     cursor: default;
 }
 
+#slider img {
+  padding-bottom: 5px;
+}
+
+.slider-link {
+  display: none;
+  font-size: 1.5em;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  z-index: 15;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 
 /* Contact form */
 
