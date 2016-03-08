@@ -83,6 +83,7 @@ p:last-child { margin-bottom: 0; }
 .box {
 	display: block;
 	padding: 10px;
+  margin: 0 auto;
 }
 
 .box-text {
