@@ -119,6 +119,13 @@ p:last-child { margin-bottom: 0; }
 
 .box-nav-item-link { padding: 10px; }
 
+.profile-pic {
+  width: 150px;
+  height: auto;
+  float: right;
+  padding-left: 40px;
+}
+
 /*.box-nav-item:hover, .box-nav-item:focus, .box-nav-item.active {
 	background-color: #f6f6f6;
 }*/
