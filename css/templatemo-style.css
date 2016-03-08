@@ -60,7 +60,7 @@ p:last-child { margin-bottom: 0; }
 /*.content-wrapper { margin-top: 25px; }*/
 
 .content {
-	max-width: 600px;
+	max-width: 900px;
   margin-left: 0;
 }
 
@@ -151,7 +151,7 @@ p:last-child { margin-bottom: 0; }
 
 .margin-t-30 {	margin-top: 30px; }
 .margin-b-20 {	margin-bottom: 20px; }
-.margin-t-30p { margin-top: 30%; }
+.margin-t-15p { margin-top: 15%; }
 
 .block-keep-ratio,
 .block-keep-ratio-content {
@@ -328,4 +328,8 @@ p:last-child { margin-bottom: 0; }
 
 	.content-text { padding: 30px 25px; }
 	.content-text-gallery { padding: 5px; }
+
+  #carousel ul.slides li {
+    width: 200px!important;
+  }
 }
