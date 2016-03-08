@@ -9,15 +9,27 @@ jQuery(function($) {
         /* Load Flex slider
         -------------------------------------------*/
         // The slider being synced must be initialized first
-        $('#carousel').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            itemWidth: 280,
-            itemMargin: 10,
-            asNavFor: '#slider'
-        });
+        if( $(window).width() > 991) {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 250,
+                itemMargin: 10,
+                asNavFor: '#slider'
+            });
+        } else {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 200,
+                itemMargin: 10,
+                asNavFor: '#slider'
+            });
+        }
 
         $('#slider').flexslider({
             animation: "slide",
@@ -93,6 +105,10 @@ jQuery(function($) {
                 $(".js-footer").fadeIn();
             });
 
+            $('html,body').animate({
+              scrollTop: $('#' + currentItemNo).offset().top
+            }, 500);
+            return false;
         });
 
     });
