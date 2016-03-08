@@ -306,11 +306,16 @@ p:last-child { margin-bottom: 0; }
 	}
 
 	.footer { position: static;	}
+
+  #carousel ul.slides li {
+    width: 200px!important;
+  }
 }
 
 @media screen and (max-width: 767px) {
 	.content-wrapper { position: static; }
   .content { max-width: 500px;}
+
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
@@ -334,7 +339,4 @@ p:last-child { margin-bottom: 0; }
 	.content-text { padding: 30px 25px; }
 	.content-text-gallery { padding: 5px; }
 
-  #carousel ul.slides li {
-    width: 200px!important;
-  }
 }

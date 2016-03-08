@@ -14,7 +14,7 @@ jQuery(function($) {
             controlNav: false,
             animationLoop: false,
             slideshow: false,
-            itemWidth: 280,
+            itemWidth: 250,
             itemMargin: 10,
             asNavFor: '#slider'
         });
@@ -93,6 +93,10 @@ jQuery(function($) {
                 $(".js-footer").fadeIn();
             });
 
+            $('html,body').animate({
+              scrollTop: $('#' + currentItemNo).offset().top
+            }, 500);
+            return false;
         });
 
     });
