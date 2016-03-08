@@ -53,14 +53,14 @@ p:last-child { margin-bottom: 0; }
 .page-bg-imgs-list { display: none; }
 
 .header {
-	max-width: 420px;
+	max-width: 500px;
 	overflow: auto;
 }
 
 /*.content-wrapper { margin-top: 25px; }*/
 
 .content {
-	max-width: 600px;
+	max-width: 900px;
   margin-left: 0;
 }
 
@@ -97,9 +97,8 @@ p:last-child { margin-bottom: 0; }
 .box-black { background-color: black; }
 
 .site-title-text {
-	font-size: 3.8em;
-	padding-top: 20px;
-	padding-bottom: 25px;
+	font-size: 3.5em;
+  padding: 20px 15px 25px 15px;
 	text-align: center;
 }
 
@@ -152,7 +151,7 @@ p:last-child { margin-bottom: 0; }
 
 .margin-t-30 {	margin-top: 30px; }
 .margin-b-20 {	margin-bottom: 20px; }
-.margin-t-30p { margin-top: 30%; }
+.margin-t-15p { margin-top: 15%; }
 
 .block-keep-ratio,
 .block-keep-ratio-content {
@@ -192,13 +191,14 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
 }
 
-.contact-icons {
-  min-height: 200px;
-}
-
 .contact-icons img {
   width: 100%;
   height: auto;
+}
+
+.contact-icons img:hover {
+  width: calc(100% - 5px);
+  opacity: 0.7;
 }
 
 .contact-page {
@@ -310,7 +310,7 @@ p:last-child { margin-bottom: 0; }
 
 @media screen and (max-width: 767px) {
 	.content-wrapper { position: static; }
-  .content { max-width: 420px;}
+  .content { max-width: 500px;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
@@ -333,4 +333,8 @@ p:last-child { margin-bottom: 0; }
 
 	.content-text { padding: 30px 25px; }
 	.content-text-gallery { padding: 5px; }
+
+  #carousel ul.slides li {
+    width: 200px!important;
+  }
 }
