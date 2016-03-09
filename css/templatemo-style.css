@@ -64,6 +64,11 @@ p:last-child { margin-bottom: 0; }
   margin-left: 0;
 }
 
+.content.contact,
+.content.resume {
+  max-width: 600px;
+}
+
 .content-gallery { max-width: 900px; }
 
 .content-text {
@@ -204,20 +209,6 @@ p:last-child { margin-bottom: 0; }
     text-align: center;
 }
 
-.contact-icons img {
-  width: 100%;
-  height: auto;
-}
-
-.content.contact {
-  max-width: 600px;
-}
-
-.contact-icons img:hover {
-  width: calc(100% - 5px);
-  opacity: 0.7;
-}
-
 /* FlexSlider Styles
 -------------------------------------------- */
 
@@ -252,6 +243,17 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* Contact form */
+
+.contact-icons img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-icons img:hover {
+  width: calc(100% - 5px);
+  opacity: 0.7;
+}
+
 
 .contact-form {
   margin-top: 10px;
