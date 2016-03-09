@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $('.start-game').on('click', function(){
+    start();
+  })
+})
+
 //Initialize first coin
 var firstCoin = {
     posX: Math.floor(Math.random()*5 + 1),
@@ -22,7 +28,7 @@ var pouch = {
   stepsTaken: 0
 }
 
-//made move its own function so that restart_game would work
+//made move its own function so that restartGame would work
 var move = function(direction) {
 
     //only allow movement if player did not miss 5 or more coins
@@ -53,7 +59,7 @@ var drop, spawn;
 
 //Starts dropping coins and spawning new coins over time
 function start() {
-  restart_game();
+  restartGame();
   drop = setInterval(dropCoins, 200);
   spawn = setInterval(spawnCoin, 5000);
 }
@@ -83,7 +89,6 @@ function dropCoins() {
         //Stops coins from dropping and spawning
         clearInterval(drop);
         clearInterval(spawn);
-        // restart_game();
       }
       //Updates scorescreen
       else {
@@ -146,7 +151,7 @@ document.onkeydown = function(e) {
 }
 
 //Resets game to original values
-var restart_game = function() {
+var restartGame = function() {
 
   clearImages();
 

@@ -73,7 +73,8 @@ jQuery(function($) {
         $(".js-site-title").click(function(){
             $('.js-nav').fadeToggle();
             $('.js-content-wrapper').fadeToggle();
-            $('.secret-game').toggle();
+            $('.secret-game').fadeToggle();
+            $('.site-title-text').toggleClass('active');
             history.pushState("", document.title, window.location.pathname);
         });
 

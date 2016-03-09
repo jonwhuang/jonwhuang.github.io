@@ -138,9 +138,9 @@ p:last-child { margin-bottom: 0; }
 
 .box-nav-item:hover .box-text-nav-item,
 .box-nav-item:focus .box-text-nav-item,
-.box-nav-item.active .box-text-nav-item {
+.box-nav-item.active .box-text-nav-item,
+.site-title-text.active {
 	color: #64B24D;
-	border: 1px solid black;
 }
 
 /* footer */
@@ -327,7 +327,7 @@ p:last-child { margin-bottom: 0; }
 @media screen and (max-width: 767px) {
 	.content-wrapper { position: static; }
   .content { max-width: 500px;}
-
+  .page-title-text { text-align: center;}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {

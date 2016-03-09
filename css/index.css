@@ -17,20 +17,23 @@
   color: #008000;
 }
 
-.secret-game {
-  display: none;
-  text-align: center;
-}
 
 
 /*Game css*/
+.secret-game {
+  display: none;
+  text-align: center;
+  max-width: 500px;
+  position: fixed;
+}
+
 .secret-game .box-text {
   padding: 15px 25px;
 }
 
 td {
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
+  border-right: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
   width: 30px;
   height: 30px;
   overflow: hidden;
@@ -50,6 +53,7 @@ table {
   .game-instructions {
     clear: both;
   }
+
   table {
     float: none;
     margin: 0 auto;
