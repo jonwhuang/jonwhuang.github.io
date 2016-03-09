@@ -148,20 +148,8 @@ p:last-child { margin-bottom: 0; }
 	color: #64B24D;
 }
 
-/* footer */
-
-.footer {
-	display: none;
-	position: fixed;
-	bottom: 10px;
-	left: 30px;
-}
-
-.footer a {	color: rgba(255, 255, 255, 0.8); }
-
-.copyright-text {
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 0.8em;
+.resume {
+  margin-top: 15%;
 }
 
 
@@ -169,7 +157,6 @@ p:last-child { margin-bottom: 0; }
 
 .margin-t-30 {	margin-top: 30px; }
 .margin-b-20 {	margin-bottom: 20px; }
-.margin-t-15p { margin-top: 15%; }
 
 .block-keep-ratio,
 .block-keep-ratio-content {
@@ -320,6 +307,8 @@ p:last-child { margin-bottom: 0; }
 	}
 
 	.content { margin: 0; }
+
+  .resume { margin-top: 20%;}
 
 	.content-wrapper {
 		margin-top: 30px;
