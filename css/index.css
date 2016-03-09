@@ -24,6 +24,7 @@
   display: none;
   text-align: center;
   max-width: 500px;
+  position: fixed;
 }
 
 .secret-game .box-text {
@@ -49,11 +50,15 @@ table {
 }
 
 @media screen and (max-width: 767px) {
+  .secret-game {
+    position: relative;
+  }
+
   .game-instructions {
     clear: both;
   }
 
-  table {
+  .game-table {
     float: none;
     margin: 0 auto;
   }
