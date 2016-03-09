@@ -1,0 +1,65 @@
+.overlay-text {
+  position: fixed;
+  margin-top: 10px;
+  padding: 5px 10px 7px;
+  margin-left: calc(16.66% - 90px);
+  border-radius: 3px;
+  font-size: 0.75em;
+  box-shadow: inset 0 -1px 0 1px rgba(0,0,0,.1), inset 0 -10px 20px rgba(0,0,0,.1);
+  cursor: pointer;
+  background: #f6f6f6;
+  color: #64B24D;
+  display: none;
+}
+
+.overlay-text:hover {
+  background: #f5f5f5;
+  color: #008000;
+}
+
+
+
+/*Game css*/
+.secret-game {
+  display: none;
+  text-align: center;
+  max-width: 500px;
+  position: fixed;
+}
+
+.secret-game .box-text {
+  padding: 15px 25px;
+}
+
+td {
+  border-right: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+table {
+  float: right;
+  margin-right: 20%;
+  margin-left: 10px;
+}
+
+#missed {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .secret-game {
+    position: relative;
+  }
+
+  .game-instructions {
+    clear: both;
+  }
+
+  .game-table {
+    float: none;
+    margin: 0 auto;
+  }
+}

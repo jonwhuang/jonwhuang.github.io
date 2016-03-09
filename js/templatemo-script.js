@@ -73,8 +73,9 @@ jQuery(function($) {
         $(".js-site-title").click(function(){
             $('.js-nav').fadeToggle();
             $('.js-content-wrapper').fadeToggle();
+            $('.secret-game').fadeToggle();
+            $('.site-title-text').toggleClass('active');
             history.pushState("", document.title, window.location.pathname);
-            $('.js-footer').toggleClass("sticky");
         });
 
         /* Handle Nav item click
