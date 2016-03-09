@@ -2,6 +2,10 @@ $(document).ready(function(){
   $('.start-game').on('click', function(){
     start();
   })
+
+  for(var i = 0; i < 10; i++) {
+    $('.game-table').prepend('<tr><td class="square"><img id="' + i + '1"></img></td><td class="square"><img id="' + i + '2"></img></td><td class="square"><img id="' + i + '3"></img></td><td class="square"><img id="' + i + '4"></img></td><td class="square"><img id="' + i + '5"></img></td></tr>');
+  }
 })
 
 //Initialize first coin
@@ -81,7 +85,7 @@ function dropCoins() {
 
       //prints game over message and stops the game
       if (pouch.missed >= 5) {
-      document.getElementById("game-over").innerHTML = "Game over! You collected " + pouch.coins + " coins total!";
+      document.getElementById("game-log").innerHTML = "Game over! You collected " + pouch.coins + " coins total!";
         //Updates high score if new high score
         if (highScore < pouch.coins) {
           highScore = pouch.coins;
@@ -92,7 +96,7 @@ function dropCoins() {
       }
       //Updates scorescreen
       else {
-        document.getElementById("game-over").innerHTML = "You've collected " + pouch.coins + " coins.";
+        document.getElementById("game-log").innerHTML = "You've collected " + pouch.coins + " coins.";
       }
 }
 
