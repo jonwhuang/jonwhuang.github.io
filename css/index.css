@@ -17,7 +17,9 @@
   color: #008000;
 }
 
-
+.overlay-text.coming-soon {
+  margin-left: calc(16.66% - 110px);
+}
 
 /*Game css*/
 .secret-game {
