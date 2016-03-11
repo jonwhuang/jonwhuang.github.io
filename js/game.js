@@ -6,6 +6,12 @@ $(document).ready(function(){
   for(var i = 0; i < 10; i++) {
     $('.game-table').prepend('<tr><td class="square"><img id="' + i + '1"></img></td><td class="square"><img id="' + i + '2"></img></td><td class="square"><img id="' + i + '3"></img></td><td class="square"><img id="' + i + '4"></img></td><td class="square"><img id="' + i + '5"></img></td></tr>');
   }
+
+  $('.mobile-controls').on('click', 'img', function(e){
+    e.preventDefault();
+    var direction = $(this).attr('id');
+    move(direction);
+  })
 })
 
 //Initialize first coin

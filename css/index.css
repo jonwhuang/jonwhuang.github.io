@@ -53,6 +53,7 @@ table {
 
 .mobile-controls {
   margin-top: 5px;
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -67,5 +68,9 @@ table {
   .game-table {
     float: none;
     margin: 0 auto;
+  }
+
+  .mobile-controls {
+    display: initial;
   }
 }
