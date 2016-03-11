@@ -25,7 +25,7 @@ jQuery(function($) {
                 controlNav: false,
                 animationLoop: false,
                 slideshow: false,
-                itemWidth: 200,
+                itemWidth: 170,
                 itemMargin: 10,
                 asNavFor: '#slider'
             });
