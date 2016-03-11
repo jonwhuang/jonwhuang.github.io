@@ -131,6 +131,7 @@ p:last-child { margin-bottom: 0; }
 	font-size: 3.4em;
   padding: 20px 15px 25px 15px;
 	text-align: center;
+  border: none;
 }
 
 .page-title-text {
@@ -173,6 +174,10 @@ p:last-child { margin-bottom: 0; }
 	color: #64B24D;
   background-color: #f6f6f6;
   border: 1px solid black;
+}
+
+.site-title-text.active {
+  border: none;
 }
 
 .resume {

@@ -51,6 +51,10 @@ table {
   margin-top: 1em;
 }
 
+.mobile-controls {
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 767px) {
   .secret-game {
     position: relative;
